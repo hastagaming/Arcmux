@@ -1,0 +1,22 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    namespace 'com.hastagaming.arcmux'
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "com.hastagaming.arcmux"
+        minSdk 24
+        targetSdk 34
+        versionCode 1
+        versionName "1.0-alpha"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+        }
+    }
+}

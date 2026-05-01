@@ -6,6 +6,12 @@ android {
     namespace 'com.hastagaming.arcmux'
     compileSdk 34
 
+
+    options {
+            aaptOptions {
+                namespaced = true
+            }
+      }
     defaultConfig {
         applicationId "com.hastagaming.arcmux"
         minSdk 24
@@ -19,4 +25,7 @@ android {
             minifyEnabled false
         }
     }
+}
+configurations.all {
+    resolutionStrategy.forcedModules = ['com.android.tools.build:aapt2:8.2.0-10154469']
 }
